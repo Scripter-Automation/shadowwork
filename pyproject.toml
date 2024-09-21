@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+dynamic = ["version"]
+name = "Shadowork"
+authors = [{name="Jesus", email="anonymus@fakeemail.com"}]
+description = """"
+A trading framework which allows users to easily create,
+test and share trading strategies. Acheiving this through fundamental
+logic blocks which can be used to create buying or selling signals. 
+Enabeling users to combine technical, funamental and economical analysis.
+As well as giving users access to tested strategies wich can be combined in diferent fashions
+"""
+requires-python = ">=3.8"
+keywords = ["trading", "analysis", "framework", ]
+license = {text = "MIT License"}
+
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: Traders :: Developers :: Investors",
+  "Topic :: Trading Strategies Development",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+]
+
+[project.scripts]
+#This allows me to create a cli tool which could be usefull
+run = "spam:run_cli"
+
+[project.urls]
+#Need to change these values to the real ones
+Homepage = "https://example.com"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/me/spam.git"
